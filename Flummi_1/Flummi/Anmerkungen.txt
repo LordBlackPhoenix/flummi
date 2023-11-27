@@ -1,0 +1,27 @@
+Aufgabe
+
+Das Bild soll sich 20 mal aufbauen, 
+danach soll das stoppen und die 20 Koordinaten ausgeben!!!!!!
+
+
+-------------------------------------------------------------------------------------------------------
+11.07 2019
+
+Aufgaben:
+
+1: Multiball
+sollen mehrere Bälle im Spielfeld dopsen.
+
+2. Reibung 
+Ball soll schnell beginnen und immer langsamer werden - liegen bleibt
+
+3. 2.Ebene***
+Wir bauen ins Spielfeld ein Loch, wenn der Ball rein fällt geht es im Spielfeld 2 weiter , bis er dort
+wieder ins fällt
+
+4.Zwei Bälle doppsen von einander ab****
+
+5.Aufgaben in verschiedene Cpp*****-*
+
+
+

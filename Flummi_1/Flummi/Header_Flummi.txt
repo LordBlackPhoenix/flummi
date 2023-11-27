@@ -1,0 +1,75 @@
+#include<iostream>
+#include<ctime>
+#include<Windows.h>
+using namespace std;
+
+//Global!!!!!!!!!!
+char aField[21][21];
+
+//Prototyping
+void initField(int, int);
+void printField(int, int);
+void checkborder();
+
+
+class cFlummi
+{
+public:
+	/*
+	Hier stehen hauptsächlich Methoden (Funtkionen bzw UPS)
+	Es gibt 4 Arten von Methoden
+	-  n 
+	*/
+
+
+
+
+	/* KONSTRUKTOR!!!!!
+	-  muss wie die Klasse heißen!!!!
+	-  Da er automatisch aufgerufen wird
+	-  darf keinen Rückgabeparameter haben - nicht mal void
+	-  hier stehen die Startwerte die bei der geburt eines Objekts bereits vorhanden sein müssen!!!!
+	*/
+
+//-------------------------------------------------------------------------------------------------------
+
+	cFlummi(int h, int b)
+	{
+		aposy = 1, aposx = 1; fieldy = h, fieldx = b; vectory = 1, vectorx = 1;
+	};
+	int posy() { return aposy; };
+	int posx() { return aposx; };
+	void move() { aposy=aposy + vectory, aposx=aposx+vectorx; };
+
+	void checkborder()
+	{
+		//oben und unten
+		if (aposy == 1 || aposy == fieldy-2 )
+		{
+					vectory = vectory * (-1);
+		}
+
+		//recht und links
+		if (aposx == 1  || aposx == fieldx-2)
+		{
+			vectorx = vectorx * (-1);
+		}
+	}
+
+protected:				//... erbennde Klassen haben Zugriff
+
+
+
+
+
+private:
+	// Hier stehen hauptsächlich Attribute (Variablen)
+	int aposy;
+	int aposx;
+	int fieldy;
+	int fieldx;
+	
+	int vectory;
+	int vectorx;
+
+};
